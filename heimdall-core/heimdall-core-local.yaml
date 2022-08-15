@@ -8,3 +8,10 @@ spring:
             - Path=/api/book/**
 server:
   port: 9000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: *
+        
